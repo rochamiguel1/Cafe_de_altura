@@ -1,15 +1,521 @@
 * {
-    padding: 0%;
-    border: 0%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1280px;
 }
 
 header {
-    background-color: black;
-    color: white;
-    }
+    background-color: #2B2A2B;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px, 40px;
+    height: 64px;
+}
 
-    a:visited{
-         color: white;
+.coffeeweb {
+    display: flex;
+    gap: 8px;
+    width: 186px;
+    margin-left: 40px;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    gap: 20px;
+    font-size: 14px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 24px, 24px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.phone img {
+    height: 18px;
+    width: 18px;
+}
+
+.phone p {
+    gap: 20px;
+    line-height: 14px;
+}
+
+.phone__button {
+    background-color: #515051;
+    color: white;
+    gap: 10px;
+    border-radius: 6px;
+    width: 120px;
+    height: 40px;
+    border: none;
+    font-weight: 600;
+}
+
+.bag {
+    margin-right: 40px;
+}
+
+/* cointainer coffee */
+
+.maincoffee {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(227, 222, 215, 0.3);
+    padding: 48px, 40px;
+    gap: 8px;
+}
+
+.coffeewords {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 48px;
+    text-shadow: 0px 1.5px 2px;
+}
+
+.coffeewords__h4 {
+    color: #2A5B45;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.coffeewords__h1 {
+    color: #000000;
+    font-size: 40px;
+    font-weight: 600;
 
 }
 
+.coffeewords__p {
+    color: #111827;
+    font-size: 14px;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 0;
+    gap: 16px;
+}
+
+.button__discover {
+    color: #FFFFFF;
+    background: #1F1815;
+    padding: 12px 24px;
+    gap: 8px;
+    border-radius: 4px;
+    border: none;
+}
+
+.button__buy {
+    color: #FFFFFF;
+    background: #2A5B45;
+    padding: 12px 24px;
+    gap: 8px;
+    border-radius: 4px;
+    border: none;
+}
+
+.seedcoffee {
+    border-radius: 2px;
+    box-shadow: black;
+    padding: 40px;
+}
+
+/* Container info */
+
+.photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assest/coffee_background.jpeg);
+    background-repeat: no-repeat;
+    background-size: 1280px 500px;
+    height: 500px;
+    font-weight: 600;
+}
+
+.espresso {
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+}
+
+.photo__conditions {
+    display: flex;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.photo__order {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 24px;
+    margin: 24px;
+    width: 316px;
+    height: 232px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.photo__order__list {
+    background-color: #2A5B45;
+    border-radius: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+.photo__order__list img {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px;
+}
+
+.photo__order h2 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.photo__order p {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+}
+
+/* Section bags */
+
+.bags {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffffb0;
+    text-align: center;
+    padding: 100px;
+    height: 600px;
+}
+
+.bags__news h2 {
+    color: #2A5B45;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+}
+
+.all {
+    display: flex;
+    background-color: white;
+}
+
+.bags__costarica {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    border-radius: 15px;
+    border: 1px solid rgb(190, 187, 187);
+    margin-right: 20px;
+}
+
+.bags__costarica img {
+    width: 219px;
+    height: 219px;
+    padding: 24px 0;
+    margin: 24px;
+}
+
+.bags__costarica button {
+    background-color: rgba(42, 91, 69, 0.7);
+    color: #FFFFFF;
+    font-size: 15px;
+    padding: 8px;
+    width: 80px;
+    border-radius: 8px;
+    margin: 20px;
+    border: none;
+}
+
+.bags__costarica:hover {
+    background-color: red;
+}
+
+.bags__costarica:hover button {
+    background-color: #2A5B45;
+}
+
+.look {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.look__arrow {
+    display: flex;
+    height: 20px;
+    width: 20px;
+}
+
+/* Questions */
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    align-items: center;
+    background-color: #2A5B45;
+    height: 621px;
+}
+
+.questions__frecuency {
+    width: 80%;
+}
+
+.questions__frecuency {
+    padding: 10px;
+    border-top: #000000;
+}
+
+.questions h1 {
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.questions__frecuency__coffee {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 25px;
+    color: 2B2A2B;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 24px;
+    font-weight: 350;
+    font-size: 12px;
+}
+
+.questions__frecuency__coffee p {
+    border-top: 1px solid #000000;
+    padding: 10px;
+}
+
+.questions__frecuency__coffee h2 {
+    padding-bottom: 10px;
+}
+
+.questions__doubt {
+    color: #FFFFFF;
+    display: flex;
+    gap: 10px;
+    text-decoration: underline;
+}
+
+/*   coffee shop  */
+
+.shop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #F7F5F3;
+    padding: 44px 40px;
+}
+
+.shop__place {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 24px;
+    margin: 10px;
+}
+
+.shop__place h2 {
+    color: #2A5B45;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.shop__place p {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.shop__photo {
+    display: flex;
+    border-radius: 20px;
+}
+
+.howtoget {
+    display: flex;
+    gap: 8px;
+}
+
+/* coffee contact */
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #E3DED7;
+}
+
+.contact__info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 24px;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.contact__info h1 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.contact__info p {
+    color: #6B7280;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+
+.greyphone {
+    display: flex;
+}
+
+.contact__fill {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    margin-right: 40px;
+    padding: 40px;
+    width: 588px;
+}
+
+.contact_fill_us {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact__fill input {
+    border-radius: 6px;
+    height: 34px;
+    border: 1px solid #D1D5DB;
+}
+
+.help {
+    display: flex;
+    margin-top: 20px;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+}
+
+.agree {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.contact__fill button {
+    color: #F7F5F3;
+    background-color: #2A5B45;
+    font-size: 15px;
+    padding: 8px;
+    width: 80px;
+    border-radius: 8px;
+    margin: 20px;
+    border: none;
+}
+
+/* The end */
+
+/* footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #2B2A2B;
+    height: 318px;
+    padding: 20px;
+    color: #FFFFFF;
+}
+
+.end {
+    display: flex;
+
+}
+
+.end__coffee {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.end__coffee__address {
+    display: flex;
+    gap: 5px;
+}
+
+.end__coffee button {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    background-color: #515051;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.end__five {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.end__five nav {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.end__three nav {
+    display: flex;
+    flex-direction: column;
+} */

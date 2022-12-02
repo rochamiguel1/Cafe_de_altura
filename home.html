@@ -5,13 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
+    <!--     <link rel="icon" type="favicon" href="assest/Vectorcafe.png">
+ -->
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!-- web page header -->
     <header>
-        <div class="cafeweb">
+        <div class="coffeeweb">
             <p>cafedealtura.com</p>
             <img src="./assest/Vectorcafe.png" alt="cup">
         </div>
@@ -22,15 +28,225 @@
             <a href="">Sobre nosotros</a>
             <a href="">Contacto</a>
         </nav>
-    </header>
-        <div class="contenedor">
-      <h4>De la planta a tu taza
-        <h1>El mejor café del mundo, ahora en tu casa.</h1>
-        <p>Trabajamos con agricultores de todo el mundo para seleccionar los mejores granosde café y que puedas viajar desde la comodidad de tu hogar.</p>
-      </h4>
+
+        <div class="phone">
+            <img src="./assest/Icontel.png" alt="tel">
+            <p>+34 919 49 05 18</p>
+            <button class="phone__button">Iniciar sesión</button>
         </div>
 
+        <div class="bag">
+            <img src="./assest/Group.png" alt="shop">
+        </div>
 
+    </header>
+
+    <!-- container coffee -->
+
+    <section class="maincoffee">
+        <div class="coffeewords">
+            <h4 class="coffeewords__h4">De la planta a tu taza</h4>
+            <h1 class="coffeewords__h1">El mejor café del mundo, ahora en tu casa.</h1>
+            <p class="coffeewords__p">Trabajamos con agricultores de todo el mundo para seleccionar los mejores granos
+                de café y que puedas
+                viajar desde la comodidad de tu hogar.</p>
+            <div class="button">
+                <button class="button__discover">Descubrir orígenes</button>
+                <button class="button__buy">Comprar café</button>
+            </div>
+        </div>
+        <div>
+            <img class="seedcoffee" src="assest/coffeeplant.jpg" alt="coffee plant">
+        </div>
+    </section>
+
+    <!--container info  -->
+
+    <div class="photo">
+        <div class="photo__conditions">
+            <h1> Café con las mejores condiciones</h1>
+        </div>
+        <div class="espresso">
+            <div class="photo__order">
+                <div class="photo__order__list">
+                    <img src="./assest/Icon.png" alt="order">
+                </div>
+                <h2>Recibe tu pedido sin preocuparte</h2>
+                <p>Tienes cosas más importantes en la cabeza, por eso con nuestra suscripción de café, nunca te quedarás
+                    sin
+                    tu taza de la mañana.</p>
+            </div>
+            <div class="photo__order">
+                <div class="photo__order__list">
+                    <img src="./assest/Icontruck.png" alt="send">
+                </div>
+                <h2>Envío en 24/48h</h2>
+                <p>Pide tu café antes de las 12h y lo recibirás al día siguiente.</p>
+            </div>
+            <div class="photo__order">
+                <div class="photo__order__list">
+                    <img src="./assest/Icongift.png" alt="discount">
+                </div>
+                <h2>Descuentos y beneficios</h2>
+                <p>Cada dos meses, te regalamos una bolsa de un nuevo origen sorpresa, para que lo descubras junto a
+                    nosotros.</p>
+            </div>
+        </div>
+    </div>
+    <!-- section bags -->
+
+    <div class="bags">
+        <div class="bags__news">
+            <h2>Novedades</h2>
+        </div>
+        <div class="all">
+            <div class="bags__costarica">
+                <img src="./assest/Coffee bag.png" alt="costarica">
+                <p><strong> Rica Tarazú</strong></p>
+                <p>9.00 €</p>
+                <button>Añadir</button>
+            </div>
+            <div class="bags__costarica">
+                <img src="./assest/Coffee bag-col.png" alt="colombia">
+                <p>Los Naranjos</p>
+                <p>9.00 €</p>
+                <button>Añadir</button>
+            </div>
+            <div class="bags__costarica">
+                <img src="./assest/coffee bag-laos.png" alt="laos">
+                <p>Laos Amanecer</p>
+                <p>9.00 €</p>
+                <button>Añadir</button>
+            </div>
+            <div class="bags__costarica">
+                <img src="./assest/Coffee bag-etiopia.png" alt="etiopia">
+                <p>Etiopía Yrgacheff</p>
+                <p>9.00 €</p>
+                <button>Añadir</button>
+            </div>
+        </div>
+        <div class="look">
+            <p>Ver todos </p>
+            <img class="look__arrow" src="./assest/arrow.png" alt="arrow">
+        </div>
+    </div>
+    <!-- questions -->
+    <div class="questions">
+        <div class="questions__frecuency">
+            <h1>Preguntas frecuentes</h1>
+            <div class="questions__frecuency__coffee">
+                <h2>¿Cómo hago el pedido?</h2>
+                <p>Selecciona el café que desees probar y completa el
+                    proceso de compra. Si lo prefieres, te preguntaremos
+                    cada cuánto quieres que te lo mandemos a casa y así
+                    nunca te quedarás sin café.</p>
+            </div>
+            <div class="questions__frecuency__coffee">
+                <h2>¿Por qué los precios son tan bajos?</h2>
+                <p>Viajamos constantemente para encontrar los mejores granos y a los agricultores más exigentes. Si
+                    podemos ofrecerte estos precios es porque tratamos directamente con los productores de café, sin
+                    intermediarios. Así obtenemos el mejor precio para ti y la persona que está detrás de los</p>
+            </div>
+            <div class="questions__frecuency__coffee">
+                <h2>¿Es posible enviar café a mi oficina?</h2>
+            </div>
+        </div>
+        <div class="questions__doubt">
+            <p>Resolvemos tus dudas</p>
+            <img src="./assest/whitearrow.png" alt="whitearrow">
+        </div>
+    </div>
+
+    <!-- coffee shop -->
+    <div class="shop">
+        <div class="shop__place">
+            <h2>Pruébalo en nuestro coffee shop</h2>
+            <p>Visita nuestra cafetería en el centro de la ciudad para probar los granos de café antes de hacer tu
+                pedido y
+                llévate un descuento</p>
+            <div class="howtoget">
+                <h4>Cómo llegar</h4>
+                <img src="./assest/arrow.png" alt="arrow">
+            </div>
+        </div>
+        <img class="shop__photo" src="./assest/Hero image-place.jpg" alt="shop">
+    </div>
+
+    <!--coffee contact  -->
+
+    <div class="contact">
+        <div class="contact__info">
+            <h1>Entra en contacto con nosotros</h1>
+            <p>Si tienes dudas, ponte en contacto con nosotros a través del formulario y te responderemos lo antes
+                posible.</p>
+            <p>También puedes ponerte en contacto con nostros en nuestra dirección o a través del teléfono de la tienda.
+            </p>
+            <p>742 Evergreen Terrace<br>Springfield, OR 12345</p>
+            <div class="greyphone">
+                <img src="./assest/Iconphone.png" alt="">
+                <p>+1 (555) 123-4567</p>
+            </div>
+            <img src="./assest/Detail.png" alt="detail">
+            <p>¿Buscas un trabajo? <a href=""> Ver nuestras ofertas.</a></p>
+        </div>
+        <div class="contact__fill">
+            <form action="" class="contact_fill_us">
+                <label for="name">Nombre completo</label>
+                <input type="text" id="name" name="name">
+                <label for="mail">Email</label>
+                <input type="email" id="mail" name="mail">
+                <label for="phone">teléfono</label>
+                <input type="tel" id="phone" placeholder="+1 (555) 123-4567" name="name">
+                <textarea class="help" name="ayuda" placeholder="¿En qué podemos ayudarte?" id="ayuda" rows="10"
+                    cols="10"></textarea>
+                <div class="agree">
+                    <input type="checkbox" id="agree">
+                    <label for="agree">Acepto la <u>Política de Privacidad</u> y los <u>Términos y condiciones.</u>
+                    </label>
+                </div>
+                <button>Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <!--  the end -->
+    <!-- <footer>
+        <div class="end">
+            <div class="end__coffee">
+                <div class="end__coffee__address">
+                    <p>cafedealtura.com</p>
+                    <img src="./assest/Vectorcafe.png" alt="cup">
+                </div>
+                <p>Te ayudamos en</p>
+                <button>
+                    <img src="./assest/Icontel.png" alt="phone">
+                    <p>+34 919 49 05 18</p>
+                </button>
+                <button>
+                    <img src="./assest/Iconmail.png" alt="">
+                    <p>hola@cafedealtura.com</p>
+                </button>
+            </div>
+        </div>
+        <div class="end__five">
+            <nav>
+                <a href="">Tienda</a>
+                <a href="">Suscripción</a>
+                <a href="">Para empresas</a>
+                <a href="">Sobre nosotros</a>
+                <a href="">Contacto</a>
+            </nav>
+        </div>
+        <div class="end__three">
+            <nav>
+                <a href="">Política de privacidad</a>
+                <a href="">Política de cookies</a>
+                <a href="">Términos y condiciones</a>
+            </nav>
+        </div>
+        </div>
+
+    </footer> -->
 
 
 </body>
