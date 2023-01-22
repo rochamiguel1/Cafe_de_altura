@@ -9,6 +9,10 @@ body {
     width: 1280px;
 }
 
+a {
+    text-decoration: none;
+}
+
 header {
     background-color: #2B2A2B;
     color: aliceblue;
@@ -20,10 +24,14 @@ header {
     height: 64px;
 }
 
+header a {
+    color: white;
+}
+
 .coffeeweb {
     display: flex;
     gap: 8px;
-    width: 186px;
+    width: 180px;
     margin-left: 40px;
     font-size: 24px;
 }
@@ -225,9 +233,10 @@ nav a {
 }
 
 .bags__news h2 {
+    text-align: center;
     color: #2A5B45;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 .all {
@@ -265,7 +274,7 @@ nav a {
 }
 
 .bags__costarica:hover {
-    background-color: red;
+    background-color: #E3DED7
 }
 
 .bags__costarica:hover button {
@@ -316,6 +325,7 @@ nav a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
     margin: 25px;
     color: 2B2A2B;
     background-color: #FFFFFF;
@@ -323,6 +333,13 @@ nav a {
     padding: 24px;
     font-weight: 350;
     font-size: 12px;
+}
+
+.arrowQuestions_clase {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .questions__frecuency__coffee p {
@@ -413,8 +430,6 @@ nav a {
     font-size: 14px;
     line-height: 16px;
 }
-
-
 .greyphone {
     display: flex;
 }
@@ -465,11 +480,89 @@ nav a {
     border: none;
 }
 
-/* The end */
+/* FOOTER */
+
+footer {
+    display: flex;
+    background-color: #2B2A2B;
+    height: 310px;
+    color: #FFFFFF;
+    padding: 60px;
+    gap: 20px;
+}
+
+.end {
+    flex-direction: row;
+    width: 500px;
+    background-color: #2B2A2B;
+}
+
+.endCoffee {
+    display: flex;
+    flex-direction: column;
+    ;
+}
+
+.endCoffee button {
+    display: flex;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0 10px 0;
+    padding: 12px 24px;
+    background-color: #515051;
+    color: #FFFFFF;
+    height: 48px;
+
+
+    /* display: flex;
+    margin: 10px;
+    padding: 10px;
+    background-color: #515051;
+    color: #FFFFFF;
+    border-radius: 5px;
+    border:none; */
+}
+
+.endCoffeeAddress {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    
+}
+
+.footerEnlaces {
+    display: flex;
+    flex-direction: row;
+    background-color: #2B2A2B
+}
+
+.endFive {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.endThree {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.cestaFooter{
+text-align: center;
+color: #FFFFFF;
+background-color:#2B2A2B ;
+margin: 0%;
+}
 
 /* footer {
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
     background-color: #2B2A2B;
     height: 318px;
     padding: 20px;
@@ -478,7 +571,7 @@ nav a {
 
 .end {
     display: flex;
-
+    
 }
 
 .end__coffee {
@@ -490,7 +583,8 @@ nav a {
 
 .end__coffee__address {
     display: flex;
-    gap: 5px;
+    gap: 10px;
+    
 }
 
 .end__coffee button {
@@ -500,22 +594,212 @@ nav a {
     background-color: #515051;
     color: #FFFFFF;
     border-radius: 5px;
+    border:none;
 }
-
-.end__five {
+.footerEnlaces {
     display: flex;
     flex-direction: column;
-
 }
 
-.end__five nav {
+.endfive {
     display: flex;
     flex-direction: column;
-
 }
 
-
-.end__three nav {
+.endthree  {
     display: flex;
     flex-direction: column;
 } */
+
+
+
+
+/**************TIENDA****************************/
+.bagTienda1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffffb0;
+    text-align: center;
+    padding: 100px;
+    height: 390px;
+}
+
+.bagsTienda2 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    gap: 24px;
+    text-align: center;
+}
+
+.laCasita {                /* cafe agotado */
+opacity: 0.3;          
+}                     
+
+/***************** CESTA *************************/
+
+.cestah4 {
+    display: flex;
+    justify-content: center;
+    color: #2A5B45;
+    size: 24px;
+    margin: 50px;
+}
+
+.cesta {
+    display: flex;
+    justify-content: space-between;
+    padding: 48px;
+    
+}
+
+.producto_envio {
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    display: flex;
+}
+
+.cestaProductos {
+    display: flex;
+    flex-direction: column;
+    border: 50px;
+}
+
+.uno {
+    display: flex;
+    gap: 200px;
+    padding: 20px;
+}
+
+.productos1 {
+    display: flex;
+    gap: 20px;
+
+}
+
+.cestaprecio {
+    display: flex;
+    flex-direction: column;
+}
+
+.letra {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.productos2 {
+    display: flex;
+    gap: 20px;
+}
+
+.signosMenos, .signosMas {
+    Width: 12px;
+    Height: 12px;
+
+}
+
+.cafeSuma {
+    Width: 55.66px;
+    Height: 55.66px;
+}
+
+.cafeSuma {
+    display: flex;
+    width: 55.66px;
+    height: 55.66px;
+}
+
+.signos {
+    height: 12px;
+    width: 12px;
+}
+
+.cestaEnvio {
+    display: flex;
+    flex-direction: column;
+    border: 50px;
+}
+
+.totalCarrito {
+    display: flex;
+    flex-direction: column;
+    background-color: #F7F5F3;
+    padding: 24px;
+    gap: 16px;
+    width: 384px;
+    height: 320px;
+}
+
+.totalCarrito h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.carrito1 {
+    display: flex;
+    justify-content: space-around;
+    gap: 190px;
+}
+
+.carrito2 {
+    display: flex;
+    justify-content: space-around;
+    gap: 220px;
+}
+
+.carrito3 {
+    display: flex;
+    justify-content: space-around;
+    gap: 220px;
+}
+
+.carrito4 {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 25px;
+}
+.gratis{
+    display: flex;
+    margin-left: 250px;
+}
+
+.carrito4 button {
+    height: 40px;
+    width: 129px;
+    color: #FFFFFF;
+    background-color: #2A5B45;
+    padding: 12px;
+    gap: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.cestaFooter {
+    display: flex;
+    justify-content: center;
+    background-color: #2B2A2B;
+    color: #FFFFFF;
+    height: 40px;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 16px;
+    
+}
+
+
+/**************JS*****************/
+.showHide {
+    display: none;
+}
+
+.rotated {
+    transform: rotate(180deg);
+}

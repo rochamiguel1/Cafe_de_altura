@@ -12,9 +12,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+
     <!-- web page header -->
     <header>
         <div class="coffeeweb">
@@ -22,7 +24,7 @@
             <img src="./assest/Vectorcafe.png" alt="cup">
         </div>
         <nav>
-            <a href="">Tienda</a>
+            <a href="./pages/tienda.html">Tienda</a>
             <a href="">Suscripción</a>
             <a href="">Para empresas</a>
             <a href="">Sobre nosotros</a>
@@ -36,7 +38,7 @@
         </div>
 
         <div class="bag">
-            <img src="./assest/Group.png" alt="shop">
+            <a href="./pages/cesta.html"> <img src="./assest/Group.png" alt="shop"></a>
         </div>
 
     </header>
@@ -102,27 +104,27 @@
         <div class="all">
             <div class="bags__costarica">
                 <img src="./assest/Coffee bag.png" alt="costarica">
-                <p><strong> Rica Tarazú</strong></p>
-                <p>9.00 €</p>
-                <button>Añadir</button>
+                <p> Rica Tarazú</p>
+                <p>9.00</p>
+                <button class="btnAdd">Añadir</button>
             </div>
             <div class="bags__costarica">
                 <img src="./assest/Coffee bag-col.png" alt="colombia">
                 <p>Los Naranjos</p>
-                <p>9.00 €</p>
-                <button>Añadir</button>
+                <p>9.00</p>
+                <button class="btnAdd">Añadir</button>
             </div>
             <div class="bags__costarica">
                 <img src="./assest/coffee bag-laos.png" alt="laos">
                 <p>Laos Amanecer</p>
-                <p>9.00 €</p>
-                <button>Añadir</button>
+                <p>9.00</p>
+                <button class="btnAdd">Añadir</button>
             </div>
             <div class="bags__costarica">
                 <img src="./assest/Coffee bag-etiopia.png" alt="etiopia">
                 <p>Etiopía Yrgacheff</p>
-                <p>9.00 €</p>
-                <button>Añadir</button>
+                <p>9.00</p>
+                <button class="btnAdd">Añadir</button>
             </div>
         </div>
         <div class="look">
@@ -130,19 +132,26 @@
             <img class="look__arrow" src="./assest/arrow.png" alt="arrow">
         </div>
     </div>
-    <!-- questions -->
+    <img src="./assest/heroicons-outline_minus-sm.png" alt="">
+    <!-- QUESTIONS -->
     <div class="questions">
         <div class="questions__frecuency">
             <h1>Preguntas frecuentes</h1>
             <div class="questions__frecuency__coffee">
-                <h2>¿Cómo hago el pedido?</h2>
+                <div class="arrowQuestions_clase">
+                    <h2>¿Cómo hago el pedido?</h2>
+                    <img src="./assest/up.png" class="arrowQuestions" alt="">
+                </div>
                 <p>Selecciona el café que desees probar y completa el
                     proceso de compra. Si lo prefieres, te preguntaremos
                     cada cuánto quieres que te lo mandemos a casa y así
                     nunca te quedarás sin café.</p>
             </div>
             <div class="questions__frecuency__coffee">
-                <h2>¿Por qué los precios son tan bajos?</h2>
+                <div class="arrowQuestions_clase">
+                    <h2>¿Por qué los precios son tan bajos?</h2>
+                    <img src="./assest/up.png" class="arrowQuestions" alt="">
+                </div>
                 <p>Viajamos constantemente para encontrar los mejores granos y a los agricultores más exigentes. Si
                     podemos ofrecerte estos precios es porque tratamos directamente con los productores de café, sin
                     intermediarios. Así obtenemos el mejor precio para ti y la persona que está detrás de los</p>
@@ -209,15 +218,53 @@
         </div>
     </div>
 
-    <!--  the end -->
+    <!-- FOOTER -->
+    <footer>
+        <div class="end">
+            <div class="endCoffee">
+                <div class="endCoffeeAddress">
+                    <p>cafedealtura.com <img src="./assest/Vectorcafe.png" alt="cup"></p>
+                    <p>Te ayudamos en</p>
+                </div>
+                    
+                <button>
+                    <img src="./assest/Icontel.png" alt="phone">
+                    <p>+34 919 49 05 18</p>
+                </button>
+                <button>
+                    <img src="./assest/Iconmail.png" alt="mail">
+                    <p>hola@cafedealtura.com</p>
+                </button>
+            </div>
+        </div>
+
+        <div class="footerEnlaces">
+            <nav class="endFive">
+                <a href="">Tienda</a>
+                <a href="">Suscripción</a>
+                <a href="">Para empresas</a>
+                <a href="">Sobre nosotros</a>
+                <a href="">Contacto</a>
+            </nav>
+            <nav class="endThree">
+                <a href="">Política de privacidad</a>
+                <a href="">Política de cookies</a>
+                <a href="">Términos y condiciones</a>
+            </nav>
+        </div>
+
+        </div>
+        
+    </footer>
+    <p class="cestaFooter">Todos los derechos reservados - Café de Altura SL - 2022</p>
     <!-- <footer>
         <div class="end">
-            <div class="end__coffee">
-                <div class="end__coffee__address">
+            <div class="endCoffee">
+                <div class="endCoffeeAddress">
                     <p>cafedealtura.com</p>
                     <img src="./assest/Vectorcafe.png" alt="cup">
                 </div>
-                <p>Te ayudamos en</p>
+                    <p>Te ayudamos en</p>
                 <button>
                     <img src="./assest/Icontel.png" alt="phone">
                     <p>+34 919 49 05 18</p>
@@ -228,26 +275,27 @@
                 </button>
             </div>
         </div>
-        <div class="end__five">
-            <nav>
+
+        <div class="footerEnlaces">
+            <nav class="endFive">
                 <a href="">Tienda</a>
                 <a href="">Suscripción</a>
                 <a href="">Para empresas</a>
                 <a href="">Sobre nosotros</a>
                 <a href="">Contacto</a>
             </nav>
-        </div>
-        <div class="end__three">
-            <nav>
+            <nav class="endThree">
                 <a href="">Política de privacidad</a>
                 <a href="">Política de cookies</a>
                 <a href="">Términos y condiciones</a>
             </nav>
         </div>
+
         </div>
 
-    </footer> -->
-
+    </footer>
+    <p class="cestaFooter">Todos los derechos reservados - Café de Altura SL - 2022</p> -->
+    <script src="./script/main.js"></script>
 
 </body>
 
